@@ -59,7 +59,23 @@ class Program
               Console.WriteLine("");
          }
 
+        //Code for Bonus Question. I definitely did not like this one.
+        Console.WriteLine("Assign an int value to n");
+        int input = Convert.ToInt32(Console.ReadLine());
 
+        for(int row=1; row<=input; row++)//input=10, row=10
+        {
+            for(int y=row; y<input; y++)//type spaces until y is no longer less than input
+            {
+                Console.Write(" ");
+            }
+            for(int z=1; z<=row; z++)//type row variable until z is not less than or equal to row
+            {
+                Console.Write(row);
+            }
+
+            Console.WriteLine("");//new line
+        }
 
     }
 }
